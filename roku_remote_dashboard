@@ -1,0 +1,80 @@
+views:
+  - title: Home
+    cards:
+      - type: grid
+        title: Living Room Roku
+        cards:
+          - type: grid
+            cards:
+              - type: custom:button-card
+                icon: mdi:power
+                tap_action:
+                  action: call-service
+                  service: remote.send_command
+                  service_data:
+                    entity_id: remote.living_room_roku
+                    command: power
+                name: Power
+                show_name: false
+                styles:
+                  card:
+                    - background-color: red
+              - type: custom:button-card
+                icon: mdi:arrow-left-bold
+                tap_action:
+                  action: call-service
+                  service: remote.send_command
+                  service_data:
+                    entity_id: remote.living_room_roku
+                    command: back
+                name: Back
+              - type: custom:button-card
+                icon: mdi:home
+                tap_action:
+                  action: call-service
+                  service: remote.send_command
+                  service_data:
+                    entity_id: remote.living_room_roku
+                    command: home
+                name: Home
+              - type: custom:button-card
+                icon: mdi:arrow-up
+                tap_action:
+                  action: call-service
+                  service: remote.send_command
+                  service_data:
+                    entity_id: remote.living_room_roku
+                    command: up
+              - type: custom:button-card
+                icon: mdi:arrow-down
+                tap_action:
+                  action: call-service
+                  service: remote.send_command
+                  service_data:
+                    entity_id: remote.living_room_roku
+                    command: down
+              - type: custom:button-card
+                icon: mdi:arrow-left
+                tap_action:
+                  action: call-service
+                  service: remote.send_command
+                  service_data:
+                    entity_id: remote.living_room_roku
+                    command: left
+              - type: custom:button-card
+                icon: mdi:arrow-right
+                tap_action:
+                  action: call-service
+                  service: remote.send_command
+                  service_data:
+                    entity_id: remote.living_room_roku
+                    command: right
+              - type: custom:button-card
+                icon: mdi:checkbox-marked-circle-outline
+                tap_action:
+                  action: call-service
+                  service: remote.send_command
+                  service_data:
+                    entity_id: remote.living_room_roku
+                    command: select
+                name: Select
